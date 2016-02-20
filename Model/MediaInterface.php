@@ -380,4 +380,14 @@ interface MediaInterface
      * @return string
      */
     public function getPreviousProviderReference();
+
+    /**
+     * @return array
+     */
+    public function getAssetPaths();
+
+    /**
+     * @param array $paths
+     */
+    public function setAssetPaths($paths);
 }

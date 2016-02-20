@@ -647,4 +647,20 @@ abstract class Media implements MediaInterface
     {
         $this->category = $category;
     }
+
+    /**
+     * @inheritdoc
+     */
+    public function setAssetPaths($paths)
+    {
+        $this->assetPaths = $paths;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getAssetPaths()
+    {
+        return $this->assetPaths;
+    }
 }
